@@ -44,7 +44,7 @@ export async function main(ns) {
 
     if(agrs.Remove) {
         server = await ns.prompt("Please enter a name for the server that you want to remove.", { type: "select", choices: AllServers(ns, "home")});
-        yorn = await ns.prompt(`Are you sure you want to delete the server named: \n${server} \nThis action can NOT be undone and you will not get refunded`);
+        yorn = await ns.prompt(`Are you sure you want to delete the server named: \n${server} \nThis action can NOT be undone and you will not be refunded`);
         if(yorn == true) {
             if(!AllServers(ns, "home").includes(server)) {
                 return ns.tprint(`${red}Server with a name of ${server} does not exist`);
