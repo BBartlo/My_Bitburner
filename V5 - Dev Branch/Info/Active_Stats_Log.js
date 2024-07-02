@@ -125,7 +125,7 @@ export async function main(ns) {
             }
         }
 
-        if(ns.bladeburner.getCurrentAction().type != 'Idle') {
+        if(ns.bladeburner.getCurrentAction().type != null) {
             ns.print(`${bladeburnerblue}BLADEBURNER`)
             if (ns.bladeburner.getCurrentAction().type == 'General') {
                 ns.print(`${green}General work for Bladeburner`);
