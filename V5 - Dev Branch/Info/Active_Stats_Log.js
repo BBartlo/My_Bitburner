@@ -3,7 +3,6 @@ import { portinfo } from "/src/Function-Library/Functions.js"
 import { progressBar } from "/src/Function-Library/Functions.js"
 import { AllServers } from "/src/Function-Library/Functions.js"
 
-
 /** @param {NS} ns */
 export async function main(ns) {
     ns.tail();ns.disableLog("ALL");ns.clearLog();
